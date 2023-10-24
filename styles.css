@@ -1,0 +1,420 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-image: url(imagens/escheresque_ste.png); /* Plano de fundo da imagem */
+	color: white; /* Texto em branco */
+	font-weight: bold; /* Texto em negrito (bold) */
+}
+	
+section {
+	padding: 20px;
+	background-color: #666666;
+	margin: 20px;
+	border-radius: 5px;
+	
+}
+
+/* Centraliza o conteúdo na direita */
+
+header {
+    position: fixed; /* Torna o cabeçalho fixo na parte superior da janela */
+	width: 100%; /* Largura total */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo de exemplo */
+    padding: 5px;
+	z-index: 100; /* Garante que o cabeçalho esteja acima de outros elementos */
+	top: 0; /* Ajusta a distância do topo da janela */
+	border-radius: 0 0 20px 20px; /* Borda arredondada na parte inferior */
+}
+
+#menu-icon {
+    cursor: pointer;
+}
+
+#nome {
+	color: #333333;
+	font-size: 24px;
+}
+
+#nome {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave para o fundo e box-shadow */
+  text-decoration: none; /* Remove a decoração de link */
+}
+
+#nome:hover {
+	background-color: #66FFFF; /* Fundo brilhante ao passar o mouse */
+	box-shadow: 0 0 10px #66FFFF; /* Adiciona uma sombra brilhante ao passar o mouse */
+}
+
+#nome:hover a {
+	color: #FF00FF; /* Define a cor do texto para branco ao passar o mouse */
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    text-align: right;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+}
+
+
+
+/* Adicione estilos adicionais conforme necessário */
+
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #0099FF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #0099FF;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu a {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+	}
+
+.content {
+    display: flex;
+    align-items: center;
+    border-radius: 20px; /* Adiciona bordas arredondadas ao contêiner */
+    padding: 20px; /* Espaçamento interno para separar o texto do plano de fundo */
+
+    /* Adicione as seguintes regras para dispositivos móveis */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Dispor os itens verticalmente em dispositivos móveis */
+        text-align: center; /* Centralizar o texto no celular */
+    }
+}
+
+.rounded-image {
+    border-radius: 20px; /* Adiciona bordas arredondadas à imagem */
+    max-width: 50%; /* A imagem terá um tamanho máximo de 100% da largura do contêiner */
+    height: auto; /* A altura se ajustará automaticamente de acordo com a largura */
+    margin-right: 20px; /* Espaço à direita da imagem */
+	
+
+.text {
+    flex: 1; /* Ocupa o espaço restante disponível */
+}
+}
+
+#home {
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+#movimento {
+    display: inline-block;
+    animation: moveName 5s linear infinite alternate;
+}
+
+#descricao {
+    text-align: center; /* Centralize o texto descritivo */
+}
+
+@keyframes moveName {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Ajuste a distância que deseja que o nome se mova */
+    }
+}
+
+#name {
+	display: inline-block;
+	animation: moveName 5s linear infinite alternate;
+	color: #33FF00; /* Adiciona a cor verde limão ao texto */
+}
+
+.ola {
+    border-radius: 50%; /* Adiciona bordas redondas (50% torna a imagem um círculo) */
+    max-width: 100%; /* A imagem terá um tamanho máximo de 100% da largura do contêiner */
+    height: auto; /* A altura se ajustará automaticamente de acordo com a largura */
+    margin-left: 20px; /* Define uma margem à esquerda para separar a imagem do texto */
+}
+
+/* fonte de OLA */
+
+/* Exemplo de código CSS para incorporar a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16');
+
+
+.texto-estilizado {
+    font-family: https://fonts.googleapis.com/css2?family=DotGothic16; /* Substitua "8bit-font" pelo nome da fonte 8-bit desejada, se aplicável */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de sombra ao texto */
+}
+
+
+/* Redimensionar a imagem para telas menores (largura menor que 768px) */
+@media (max-width: 768px) {
+    .ola {
+        max-width: 50%; /* A imagem terá um tamanho máximo de 50% da largura do contêiner em telas menores */
+        border-radius: 50%; /* Mantém as bordas redondas (ainda é um círculo) */
+        margin-left: 0; /* Remove a margem à esquerda em telas menores */
+    }
+}
+
+/* Adicione essas regras ao seu CSS */
+.ola:hover {
+    transform: rotate(360deg); /* Gire a imagem em 360 graus quando o mouse estiver sobre ela */
+    transition: transform 1s; /* Adicione uma transição suave de 1 segundo para a animação */
+}
+
+/* Estilos CSS */
+.ola {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px;
+    transition: transform 1s;
+}
+
+.ola.rotate {
+    transform: rotate(360deg);
+}
+
+/* Estilos para os botões */
+.botoes {
+    text-align: center; /* Centraliza os botões */
+    margin-top: 20px; /* Adiciona uma margem superior para separá-los dos elementos acima */
+}
+
+.botao-link {
+    text-decoration: none;
+    color: #fff; /* Texto em branco */
+    display: block; /* Torna os botões em blocos para que fiquem um abaixo do outro */
+    margin: 10px auto; /* Centraliza os botões horizontalmente e adiciona margem vertical */
+    padding: 5px 10px; /* Preenchimento (padding) para o tamanho dos botões em telas menores */
+    border: none; /* Remove a borda */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Tamanho da fonte para telas menores */
+	text-align: center;
+    transition: background-color 0.3s;
+
+    cursor: pointer; /* Adiciona cursor do tipo "mão" para indicar que é clicável */
+    max-width: 150px; /* Largura máxima dos botões */
+}
+
+.botao-link:hover {
+	background-color: #666666; /* Cor de destaque ao passar o mouse */
+}
+
+.linkedin {
+	background-color: #0099FF; /* Cor de fundo do botão LinkedIn */
+}
+
+.github {
+	background-color: #0066FF; /* Cor de fundo azul fixa para o botão GitHub */
+}
+
+.icone {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.botao-link:active {
+	background-color: #333333; /* Cor de fundo de volta à cor original ao clicar no botão */
+	color: white; /* Cor do texto volta à cor original ao clicar no botão */
+}
+
+
+/* Estilize o menu de guias */
+[data-tab='menu'] li {
+    cursor: pointer;
+}
+
+/* Estilo para ocultar todas as guias de experiência */
+.experiencia__descricao section {
+    display: none;
+}
+
+/* Estilize o menu de guias */
+[data-tab='menu'] li {
+    cursor: pointer;
+    padding: 10px; /* Adicione o espaçamento desejado entre a borda e o texto */
+    margin: 5px; /* Adicione margem para espaçamento entre guias */
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+    border-radius: 10px; /* Arredonde as bordas */
+}
+
+/* Estilo para a guia ativa */
+[data-tab='menu'] li.active {
+    font-weight: bold;
+}
+
+/* Estilo para o conteúdo da guia ativa */
+.experiencia__descricao section.active {
+    display: block;
+}
+
+/* Estilo para as guias ao passar o mouse */
+[data-tab='menu'] li:hover {
+    background-color: #ccc; /* Altere a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o contêiner dos projetos (duas colunas) */
+.projeto-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para cada projeto (uma coluna) com borda cinza */
+.projeto {
+    width: 48%; /* Define a largura de cada projeto para ocupar metade do contêiner */
+    padding: 10px;
+    border: 1px solid #555; /* Adicione uma borda cinza */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Estilo para as imagens dos projetos com bordas arredondadas */
+.projeto img {
+    border-radius: 10px; /* Adicione bordas arredondadas */
+    transition: transform 0.3s; /* Adicione uma transição de transformação para o efeito de movimento */
+}
+
+/* Efeito de movimento ao passar o mouse sobre as imagens */
+.projeto img:hover {
+    transform: scale(1.05); /* Amplie a imagem em 105% (efeito de zoom) */
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+/* Estilizando a barra de rolagem no Chrome e no Safari */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+  background-color: lightblue; /* Cor de fundo azul bebê */
+}
+
+/* Estilizando o polegar da barra de rolagem no Chrome e no Safari */
+::-webkit-scrollbar-thumb {
+  background-color: dodgerblue; /* Cor do polegar da barra de rolagem */
+  border-radius: 6px; /* Borda arredondada */
+}
+
+/* Estilizando a barra de rolagem no Firefox */
+/* Nota: O Firefox não suporta totalmente a estilização da barra de rolagem via CSS */
+/* As opções de estilo podem variar de acordo com a versão do navegador */
+
+/* Estilizando a barra de rolagem no Internet Explorer */
+/* Nota: O Internet Explorer não suporta totalmente a estilização da barra de rolagem via CSS */
+
+/* Estilizando a barra de rolagem no Edge */
+/* Nota: A estilização da barra de rolagem no Microsoft Edge também pode variar */
+
+/* Adicione outras regras de estilo específicas do navegador, se necessário */
+
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    .projeto-container {
+        flex-direction: column; /* Altera para uma coluna em dispositivos móveis */
+    }
+
+    .projeto {
+        width: 100%; /* Ocupa toda a largura da tela em dispositivos móveis */
+    }
+}
+
+
+
+
+/* Redimensionar os botões para telas maiores (largura maior que 768px) */
+@media (min-width: 769px) {
+    .botao-link {
+        padding: 6px 10px; /* Reduz o tamanho dos botões em telas maiores */
+        font-size: 18px; /* Tamanho da fonte em telas maiores */
+        max-width: 200px; /* Largura máxima dos botões em telas maiores */
+    }
+
